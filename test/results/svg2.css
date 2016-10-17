@@ -2,13 +2,15 @@
   Icon Font: svg2
 */
 
+
+
 @font-face {
   font-family: "svg2";
-  src: url("./svg2.eot");
-  src: url("./svg2.eot?#iefix") format("embedded-opentype"),
-       url("./svg2.woff") format("woff"),
-       url("./svg2.ttf") format("truetype"),
-       url("./svg2.svg#svg2") format("svg");
+  src: url("../fonts/svg2.eot?5c0ce548dbae5ece1590da196988bd51");
+  src: url("../fonts/svg2.eot?5c0ce548dbae5ece1590da196988bd51#iefix") format("embedded-opentype"),
+       url("../fonts/svg2.woff?5c0ce548dbae5ece1590da196988bd51") format("woff"),
+       url("../fonts/svg2.ttf?5c0ce548dbae5ece1590da196988bd51") format("truetype"),
+       url("../fonts/svg2.svg?5c0ce548dbae5ece1590da196988bd51#svg1") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -16,15 +18,11 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: "svg2";
-    src: url("./svg2.svg#svg2") format("svg");
+    src: url("../fonts/svg2.svg?5c0ce548dbae5ece1590da196988bd51#svg1") format("svg");
   }
 }
 
-[data-icon]:before { content: attr(data-icon); }
-
-[data-icon]:before,
-.icon-modify:before,
-.icon-record:before {
+.icon {
   display: inline-block;
   font-family: "svg2";
   font-style: normal;

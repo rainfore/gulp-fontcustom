@@ -15,6 +15,8 @@ const fs = {
     readFile: c2p(require('fs').readFile),
 };
 
+const DEFAULT_TEMPLATES = ['preview', 'css', 'scss', 'scss-rails'];
+
 module.exports = function (options, opts) {
     const cmd = 'fontcustom compile';
     const defaults = {
@@ -40,6 +42,13 @@ module.exports = function (options, opts) {
             const _options = Object.assign({}, defaults, options);
             _options.output = './';
             _options.font_name = _options.font_name || path.basename(file.path);
+            // Fuck fontcustom doesn't support an absolute path.
+            _options.templates = _options.templates.split(' ').map((template) => {
+                if(DEFAULT_TEMPLATES.includes(template))
+                    return template;
+                else
+                    return path.relative(file.path, path.resolve(file.cwd, template))
+            }).join(' ');
 
             const args = [];
             for(let key in _options)

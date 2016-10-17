@@ -2,13 +2,15 @@
   Icon Font: svg1
 */
 
+
+
 @font-face {
   font-family: "svg1";
-  src: url("./svg1.eot");
-  src: url("./svg1.eot?#iefix") format("embedded-opentype"),
-       url("./svg1.woff") format("woff"),
-       url("./svg1.ttf") format("truetype"),
-       url("./svg1.svg#svg1") format("svg");
+  src: url("../fonts/svg1.eot?0632d35b7216749619883de0dfde3bbe");
+  src: url("../fonts/svg1.eot?0632d35b7216749619883de0dfde3bbe#iefix") format("embedded-opentype"),
+       url("../fonts/svg1.woff?0632d35b7216749619883de0dfde3bbe") format("woff"),
+       url("../fonts/svg1.ttf?0632d35b7216749619883de0dfde3bbe") format("truetype"),
+       url("../fonts/svg1.svg?0632d35b7216749619883de0dfde3bbe#svg1") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -16,15 +18,11 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: "svg1";
-    src: url("./svg1.svg#svg1") format("svg");
+    src: url("../fonts/svg1.svg?0632d35b7216749619883de0dfde3bbe#svg1") format("svg");
   }
 }
 
-[data-icon]:before { content: attr(data-icon); }
-
-[data-icon]:before,
-.icon-menu:before,
-.icon-ring:before {
+.icon {
   display: inline-block;
   font-family: "svg1";
   font-style: normal;
