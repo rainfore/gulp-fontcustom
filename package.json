@@ -1,0 +1,35 @@
+{
+  "name": "gulp_fontcustom",
+  "description": "A gulp plugin that convert SVG files to font icons with Fontcustom",
+  "version": "0.0.1",
+  "author": "Rainfore <rainforest92@126.com>",
+  "main": "./index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rainfore/gulp-fontcustom.git"
+  },
+  "bugs": {
+    "url": "http://github.com/rainfore/gulp-fontcustom/issues"
+  },
+  "homepage": "https://github.com/rainfore/gulp-fontcustom",
+  "license": "MIT",
+  "keywords": [
+    "gulpplugin",
+    "gulp",
+    "fontcustom",
+    "fonticon"
+  ],
+  "tags": [
+    "gulpplugin",
+    "gulp",
+    "fontcustom",
+    "fonticon"
+  ],
+  "dependencies": {
+    "gulp-util": "^3.0.7",
+    "through2": "^2.0.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0"
+  }
+}
